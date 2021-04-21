@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HugoApp' do
+  pod 'Alamofire', '~> 5.2'
+  pod 'SwiftLint'
+
+  # Pods for HugoApp
+
+  target 'HugoAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HugoAppUITests' do
+    # Pods for testing
+  end
+
+end

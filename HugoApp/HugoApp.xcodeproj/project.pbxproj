@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E547E96FEC74EDDCD9C915 /* libPods-HugoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFFF71F717E768E7C09CDC1 /* libPods-HugoApp.a */; };
+		853D1B7C2630D3CC00DA13BB /* MeetingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853D1B7B2630D3CC00DA13BB /* MeetingListViewController.swift */; };
+		853EB61A2630D5730023EAFF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6192630D5730023EAFF /* MainCoordinator.swift */; };
+		853EB6222630D64F0023EAFF /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6212630D64F0023EAFF /* ViewControllerFactory.swift */; };
+		853EB6272630D6570023EAFF /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6262630D6570023EAFF /* ViewModelFactory.swift */; };
+		853EB62C2630D66A0023EAFF /* UsecaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB62B2630D66A0023EAFF /* UsecaseFactory.swift */; };
+		853EB6312630D6720023EAFF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6302630D6720023EAFF /* ServiceFactory.swift */; };
+		853EB63A2630D6A80023EAFF /* ServiceFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6392630D6A80023EAFF /* ServiceFactoryProtocol.swift */; };
+		853EB63F2630D6B50023EAFF /* UsecaseFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB63E2630D6B50023EAFF /* UsecaseFactoryProtocol.swift */; };
+		853EB6442630D6C00023EAFF /* ViewModelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6432630D6C00023EAFF /* ViewModelFactoryProtocol.swift */; };
+		853EB6492630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6482630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift */; };
+		85B965622630D9DC00897742 /* MeetingListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B965612630D9DC00897742 /* MeetingListViewControllerProtocol.swift */; };
+		85FD55222630CF2400A0A742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55212630CF2400A0A742 /* AppDelegate.swift */; };
+		85FD55242630CF2400A0A742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55232630CF2400A0A742 /* SceneDelegate.swift */; };
+		85FD552B2630CF2700A0A742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FD552A2630CF2700A0A742 /* Assets.xcassets */; };
+		85FD552E2630CF2700A0A742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FD552C2630CF2700A0A742 /* LaunchScreen.storyboard */; };
+		85FD55392630CF2700A0A742 /* HugoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55382630CF2700A0A742 /* HugoAppTests.swift */; };
+		85FD55442630CF2700A0A742 /* HugoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55432630CF2700A0A742 /* HugoAppUITests.swift */; };
+		94FADDD9BDC717F238DA62DD /* libPods-HugoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EB8B31ECECC09FEB990CF0 /* libPods-HugoAppTests.a */; };
+		F09BB812F7BB55C385EE3513 /* libPods-HugoApp-HugoAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF06F05AC67139F96484132 /* libPods-HugoApp-HugoAppUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85FD55352630CF2700A0A742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FD55162630CF2400A0A742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FD551D2630CF2400A0A742;
+			remoteInfo = HugoApp;
+		};
+		85FD55402630CF2700A0A742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85FD55162630CF2400A0A742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85FD551D2630CF2400A0A742;
+			remoteInfo = HugoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16B87FF22A85EA99BD606064 /* Pods-HugoApp-HugoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp-HugoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HugoApp-HugoAppUITests/Pods-HugoApp-HugoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2496F90BA5BA7BEDD8C41EAA /* Pods-HugoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HugoAppTests/Pods-HugoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BFFF71F717E768E7C09CDC1 /* libPods-HugoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HugoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF06F05AC67139F96484132 /* libPods-HugoApp-HugoAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HugoApp-HugoAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A6FE04BB33A3FC7A55BDB7 /* Pods-HugoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp.debug.xcconfig"; path = "Target Support Files/Pods-HugoApp/Pods-HugoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6453D44DAF9F9B4A975CA0F6 /* Pods-HugoApp-HugoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp-HugoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HugoApp-HugoAppUITests/Pods-HugoApp-HugoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6844DC77B527E3B30D52DA93 /* Pods-HugoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp.release.xcconfig"; path = "Target Support Files/Pods-HugoApp/Pods-HugoApp.release.xcconfig"; sourceTree = "<group>"; };
+		853D1B7B2630D3CC00DA13BB /* MeetingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListViewController.swift; sourceTree = "<group>"; };
+		853EB6192630D5730023EAFF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		853EB6212630D64F0023EAFF /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		853EB6262630D6570023EAFF /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		853EB62B2630D66A0023EAFF /* UsecaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseFactory.swift; sourceTree = "<group>"; };
+		853EB6302630D6720023EAFF /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		853EB6392630D6A80023EAFF /* ServiceFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryProtocol.swift; sourceTree = "<group>"; };
+		853EB63E2630D6B50023EAFF /* UsecaseFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseFactoryProtocol.swift; sourceTree = "<group>"; };
+		853EB6432630D6C00023EAFF /* ViewModelFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryProtocol.swift; sourceTree = "<group>"; };
+		853EB6482630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryProtocol.swift; sourceTree = "<group>"; };
+		85B965612630D9DC00897742 /* MeetingListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListViewControllerProtocol.swift; sourceTree = "<group>"; };
+		85FD551E2630CF2400A0A742 /* HugoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FD55212630CF2400A0A742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85FD55232630CF2400A0A742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85FD552A2630CF2700A0A742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85FD552D2630CF2700A0A742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85FD552F2630CF2700A0A742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FD55342630CF2700A0A742 /* HugoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FD55382630CF2700A0A742 /* HugoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugoAppTests.swift; sourceTree = "<group>"; };
+		85FD553A2630CF2700A0A742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FD553F2630CF2700A0A742 /* HugoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85FD55432630CF2700A0A742 /* HugoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugoAppUITests.swift; sourceTree = "<group>"; };
+		85FD55452630CF2700A0A742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42EE184F6A33099C2276861 /* Pods-HugoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoAppTests.release.xcconfig"; path = "Target Support Files/Pods-HugoAppTests/Pods-HugoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1EB8B31ECECC09FEB990CF0 /* libPods-HugoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HugoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85FD551B2630CF2400A0A742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E547E96FEC74EDDCD9C915 /* libPods-HugoApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD55312630CF2700A0A742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FADDD9BDC717F238DA62DD /* libPods-HugoAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD553C2630CF2700A0A742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BB812F7BB55C385EE3513 /* libPods-HugoApp-HugoAppUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3477842C6D65A3DCACEDD398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BFFF71F717E768E7C09CDC1 /* libPods-HugoApp.a */,
+				4FF06F05AC67139F96484132 /* libPods-HugoApp-HugoAppUITests.a */,
+				F1EB8B31ECECC09FEB990CF0 /* libPods-HugoAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		853D1B702630D2DB00DA13BB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				853D1B722630D2F100DA13BB /* Detail */,
+				853D1B712630D2E500DA13BB /* List */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		853D1B712630D2E500DA13BB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				85B965682630DA2C00897742 /* ViewController */,
+				85B965672630DA1900897742 /* ViewModel */,
+				85B965662630DA1600897742 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		853D1B722630D2F100DA13BB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		853D1B732630D32000DA13BB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		853D1B742630D32A00DA13BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		853D1B752630D33800DA13BB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		853D1B762630D33D00DA13BB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				853EB6192630D5730023EAFF /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		853D1B772630D34B00DA13BB /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				853EB6382630D6970023EAFF /* Service */,
+				853EB6372630D68B0023EAFF /* Usecase */,
+				853EB6362630D6820023EAFF /* ViewModel */,
+				853EB6352630D6780023EAFF /* ViewController */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		853EB6352630D6780023EAFF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				853EB6212630D64F0023EAFF /* ViewControllerFactory.swift */,
+				853EB6482630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		853EB6362630D6820023EAFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				853EB6262630D6570023EAFF /* ViewModelFactory.swift */,
+				853EB6432630D6C00023EAFF /* ViewModelFactoryProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		853EB6372630D68B0023EAFF /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				853EB62B2630D66A0023EAFF /* UsecaseFactory.swift */,
+				853EB63E2630D6B50023EAFF /* UsecaseFactoryProtocol.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		853EB6382630D6970023EAFF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				853EB6302630D6720023EAFF /* ServiceFactory.swift */,
+				853EB6392630D6A80023EAFF /* ServiceFactoryProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		85B965662630DA1600897742 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85B965672630DA1900897742 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		85B965682630DA2C00897742 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				853D1B7B2630D3CC00DA13BB /* MeetingListViewController.swift */,
+				85B965612630D9DC00897742 /* MeetingListViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		85FD55152630CF2400A0A742 = {
+			isa = PBXGroup;
+			children = (
+				85FD55202630CF2400A0A742 /* HugoApp */,
+				85FD55372630CF2700A0A742 /* HugoAppTests */,
+				85FD55422630CF2700A0A742 /* HugoAppUITests */,
+				85FD551F2630CF2400A0A742 /* Products */,
+				92F2FBA7855C288C054A85CE /* Pods */,
+				3477842C6D65A3DCACEDD398 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85FD551F2630CF2400A0A742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85FD551E2630CF2400A0A742 /* HugoApp.app */,
+				85FD55342630CF2700A0A742 /* HugoAppTests.xctest */,
+				85FD553F2630CF2700A0A742 /* HugoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FD55202630CF2400A0A742 /* HugoApp */ = {
+			isa = PBXGroup;
+			children = (
+				853D1B772630D34B00DA13BB /* DependencyInjection */,
+				853D1B762630D33D00DA13BB /* Coordinator */,
+				853D1B752630D33800DA13BB /* Service */,
+				853D1B742630D32A00DA13BB /* Extension */,
+				853D1B732630D32000DA13BB /* Constant */,
+				853D1B702630D2DB00DA13BB /* Feature */,
+				85FD55212630CF2400A0A742 /* AppDelegate.swift */,
+				85FD55232630CF2400A0A742 /* SceneDelegate.swift */,
+				85FD552A2630CF2700A0A742 /* Assets.xcassets */,
+				85FD552C2630CF2700A0A742 /* LaunchScreen.storyboard */,
+				85FD552F2630CF2700A0A742 /* Info.plist */,
+			);
+			path = HugoApp;
+			sourceTree = "<group>";
+		};
+		85FD55372630CF2700A0A742 /* HugoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				85FD55382630CF2700A0A742 /* HugoAppTests.swift */,
+				85FD553A2630CF2700A0A742 /* Info.plist */,
+			);
+			path = HugoAppTests;
+			sourceTree = "<group>";
+		};
+		85FD55422630CF2700A0A742 /* HugoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85FD55432630CF2700A0A742 /* HugoAppUITests.swift */,
+				85FD55452630CF2700A0A742 /* Info.plist */,
+			);
+			path = HugoAppUITests;
+			sourceTree = "<group>";
+		};
+		92F2FBA7855C288C054A85CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51A6FE04BB33A3FC7A55BDB7 /* Pods-HugoApp.debug.xcconfig */,
+				6844DC77B527E3B30D52DA93 /* Pods-HugoApp.release.xcconfig */,
+				16B87FF22A85EA99BD606064 /* Pods-HugoApp-HugoAppUITests.debug.xcconfig */,
+				6453D44DAF9F9B4A975CA0F6 /* Pods-HugoApp-HugoAppUITests.release.xcconfig */,
+				2496F90BA5BA7BEDD8C41EAA /* Pods-HugoAppTests.debug.xcconfig */,
+				E42EE184F6A33099C2276861 /* Pods-HugoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85FD551D2630CF2400A0A742 /* HugoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FD55482630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoApp" */;
+			buildPhases = (
+				8F85947A47BFC612F0165B14 /* [CP] Check Pods Manifest.lock */,
+				85FD551A2630CF2400A0A742 /* Sources */,
+				85FD551B2630CF2400A0A742 /* Frameworks */,
+				85FD551C2630CF2400A0A742 /* Resources */,
+				85B9655D2630D76F00897742 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HugoApp;
+			productName = HugoApp;
+			productReference = 85FD551E2630CF2400A0A742 /* HugoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85FD55332630CF2700A0A742 /* HugoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FD554B2630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoAppTests" */;
+			buildPhases = (
+				29249F9E1973B0698FD5B675 /* [CP] Check Pods Manifest.lock */,
+				85FD55302630CF2700A0A742 /* Sources */,
+				85FD55312630CF2700A0A742 /* Frameworks */,
+				85FD55322630CF2700A0A742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FD55362630CF2700A0A742 /* PBXTargetDependency */,
+			);
+			name = HugoAppTests;
+			productName = HugoAppTests;
+			productReference = 85FD55342630CF2700A0A742 /* HugoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85FD553E2630CF2700A0A742 /* HugoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85FD554E2630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoAppUITests" */;
+			buildPhases = (
+				BA79BD8FA385B513E3F6328C /* [CP] Check Pods Manifest.lock */,
+				85FD553B2630CF2700A0A742 /* Sources */,
+				85FD553C2630CF2700A0A742 /* Frameworks */,
+				85FD553D2630CF2700A0A742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85FD55412630CF2700A0A742 /* PBXTargetDependency */,
+			);
+			name = HugoAppUITests;
+			productName = HugoAppUITests;
+			productReference = 85FD553F2630CF2700A0A742 /* HugoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85FD55162630CF2400A0A742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					85FD551D2630CF2400A0A742 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					85FD55332630CF2700A0A742 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 85FD551D2630CF2400A0A742;
+					};
+					85FD553E2630CF2700A0A742 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 85FD551D2630CF2400A0A742;
+					};
+				};
+			};
+			buildConfigurationList = 85FD55192630CF2400A0A742 /* Build configuration list for PBXProject "HugoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85FD55152630CF2400A0A742;
+			productRefGroup = 85FD551F2630CF2400A0A742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85FD551D2630CF2400A0A742 /* HugoApp */,
+				85FD55332630CF2700A0A742 /* HugoAppTests */,
+				85FD553E2630CF2700A0A742 /* HugoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85FD551C2630CF2400A0A742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD552E2630CF2700A0A742 /* LaunchScreen.storyboard in Resources */,
+				85FD552B2630CF2700A0A742 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD55322630CF2700A0A742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD553D2630CF2700A0A742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29249F9E1973B0698FD5B675 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HugoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B9655D2630D76F00897742 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		8F85947A47BFC612F0165B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HugoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA79BD8FA385B513E3F6328C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HugoApp-HugoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85FD551A2630CF2400A0A742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853EB6312630D6720023EAFF /* ServiceFactory.swift in Sources */,
+				853D1B7C2630D3CC00DA13BB /* MeetingListViewController.swift in Sources */,
+				853EB63F2630D6B50023EAFF /* UsecaseFactoryProtocol.swift in Sources */,
+				853EB6222630D64F0023EAFF /* ViewControllerFactory.swift in Sources */,
+				853EB61A2630D5730023EAFF /* MainCoordinator.swift in Sources */,
+				853EB6272630D6570023EAFF /* ViewModelFactory.swift in Sources */,
+				853EB63A2630D6A80023EAFF /* ServiceFactoryProtocol.swift in Sources */,
+				853EB6492630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift in Sources */,
+				853EB6442630D6C00023EAFF /* ViewModelFactoryProtocol.swift in Sources */,
+				853EB62C2630D66A0023EAFF /* UsecaseFactory.swift in Sources */,
+				85B965622630D9DC00897742 /* MeetingListViewControllerProtocol.swift in Sources */,
+				85FD55222630CF2400A0A742 /* AppDelegate.swift in Sources */,
+				85FD55242630CF2400A0A742 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD55302630CF2700A0A742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD55392630CF2700A0A742 /* HugoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FD553B2630CF2700A0A742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FD55442630CF2700A0A742 /* HugoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85FD55362630CF2700A0A742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FD551D2630CF2400A0A742 /* HugoApp */;
+			targetProxy = 85FD55352630CF2700A0A742 /* PBXContainerItemProxy */;
+		};
+		85FD55412630CF2700A0A742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85FD551D2630CF2400A0A742 /* HugoApp */;
+			targetProxy = 85FD55402630CF2700A0A742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85FD552C2630CF2700A0A742 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85FD552D2630CF2700A0A742 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85FD55462630CF2700A0A742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85FD55472630CF2700A0A742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85FD55492630CF2700A0A742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A6FE04BB33A3FC7A55BDB7 /* Pods-HugoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85FD554A2630CF2700A0A742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6844DC77B527E3B30D52DA93 /* Pods-HugoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85FD554C2630CF2700A0A742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2496F90BA5BA7BEDD8C41EAA /* Pods-HugoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugoApp.app/HugoApp";
+			};
+			name = Debug;
+		};
+		85FD554D2630CF2700A0A742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42EE184F6A33099C2276861 /* Pods-HugoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugoApp.app/HugoApp";
+			};
+			name = Release;
+		};
+		85FD554F2630CF2700A0A742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B87FF22A85EA99BD606064 /* Pods-HugoApp-HugoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugoApp;
+			};
+			name = Debug;
+		};
+		85FD55502630CF2700A0A742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6453D44DAF9F9B4A975CA0F6 /* Pods-HugoApp-HugoAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2KT7G76VC;
+				INFOPLIST_FILE = HugoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85FD55192630CF2400A0A742 /* Build configuration list for PBXProject "HugoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD55462630CF2700A0A742 /* Debug */,
+				85FD55472630CF2700A0A742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FD55482630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD55492630CF2700A0A742 /* Debug */,
+				85FD554A2630CF2700A0A742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FD554B2630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD554C2630CF2700A0A742 /* Debug */,
+				85FD554D2630CF2700A0A742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85FD554E2630CF2700A0A742 /* Build configuration list for PBXNativeTarget "HugoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85FD554F2630CF2700A0A742 /* Debug */,
+				85FD55502630CF2700A0A742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85FD55162630CF2400A0A742 /* Project object */;
+}
