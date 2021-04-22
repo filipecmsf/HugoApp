@@ -10,4 +10,5 @@ import Foundation
 protocol ViewModelFactoryProtocol {
     var usecaseFactory: UsecaseFactoryProtocol {get set}
 
+    func createMeetingViewModel() -> MeetingViewModelProtocol
 }

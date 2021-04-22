@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		05E547E96FEC74EDDCD9C915 /* libPods-HugoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFFF71F717E768E7C09CDC1 /* libPods-HugoApp.a */; };
+		8524C82F2630DEF100CB2CB9 /* MeetingListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C82E2630DEF100CB2CB9 /* MeetingListViewProtocol.swift */; };
+		8524C8342630DF1500CB2CB9 /* MeetingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8332630DF1500CB2CB9 /* MeetingListView.swift */; };
+		8524C8392630E35000CB2CB9 /* MeetingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8382630E35000CB2CB9 /* MeetingViewModelProtocol.swift */; };
+		8524C83E2630E36300CB2CB9 /* MeetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C83D2630E36300CB2CB9 /* MeetingViewModel.swift */; };
+		8524C8442630E46500CB2CB9 /* MeetingListTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8432630E46500CB2CB9 /* MeetingListTableDataSource.swift */; };
+		8524C84C2630E5EB00CB2CB9 /* MeetingListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C84B2630E5EB00CB2CB9 /* MeetingListState.swift */; };
+		8524C8522630E63800CB2CB9 /* MeetingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8512630E63800CB2CB9 /* MeetingModel.swift */; };
+		8524C8572630E74A00CB2CB9 /* MeetingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8562630E74A00CB2CB9 /* MeetingServiceProtocol.swift */; };
+		8524C85C2630E75400CB2CB9 /* MeetingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C85B2630E75400CB2CB9 /* MeetingService.swift */; };
+		8524C8612630E81D00CB2CB9 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8602630E81D00CB2CB9 /* ServiceResponse.swift */; };
+		8524C8662630E89D00CB2CB9 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8524C8652630E89D00CB2CB9 /* ServiceError.swift */; };
 		853D1B7C2630D3CC00DA13BB /* MeetingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853D1B7B2630D3CC00DA13BB /* MeetingListViewController.swift */; };
 		853EB61A2630D5730023EAFF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6192630D5730023EAFF /* MainCoordinator.swift */; };
 		853EB6222630D64F0023EAFF /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6212630D64F0023EAFF /* ViewControllerFactory.swift */; };
@@ -18,6 +29,7 @@
 		853EB63F2630D6B50023EAFF /* UsecaseFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB63E2630D6B50023EAFF /* UsecaseFactoryProtocol.swift */; };
 		853EB6442630D6C00023EAFF /* ViewModelFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6432630D6C00023EAFF /* ViewModelFactoryProtocol.swift */; };
 		853EB6492630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853EB6482630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift */; };
+		856351072630F3A5007E1205 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856351062630F3A5007E1205 /* Service.swift */; };
 		85B965622630D9DC00897742 /* MeetingListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B965612630D9DC00897742 /* MeetingListViewControllerProtocol.swift */; };
 		85FD55222630CF2400A0A742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55212630CF2400A0A742 /* AppDelegate.swift */; };
 		85FD55242630CF2400A0A742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FD55232630CF2400A0A742 /* SceneDelegate.swift */; };
@@ -54,6 +66,17 @@
 		51A6FE04BB33A3FC7A55BDB7 /* Pods-HugoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp.debug.xcconfig"; path = "Target Support Files/Pods-HugoApp/Pods-HugoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6453D44DAF9F9B4A975CA0F6 /* Pods-HugoApp-HugoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp-HugoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HugoApp-HugoAppUITests/Pods-HugoApp-HugoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6844DC77B527E3B30D52DA93 /* Pods-HugoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HugoApp.release.xcconfig"; path = "Target Support Files/Pods-HugoApp/Pods-HugoApp.release.xcconfig"; sourceTree = "<group>"; };
+		8524C82E2630DEF100CB2CB9 /* MeetingListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListViewProtocol.swift; sourceTree = "<group>"; };
+		8524C8332630DF1500CB2CB9 /* MeetingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListView.swift; sourceTree = "<group>"; };
+		8524C8382630E35000CB2CB9 /* MeetingViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewModelProtocol.swift; sourceTree = "<group>"; };
+		8524C83D2630E36300CB2CB9 /* MeetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewModel.swift; sourceTree = "<group>"; };
+		8524C8432630E46500CB2CB9 /* MeetingListTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListTableDataSource.swift; sourceTree = "<group>"; };
+		8524C84B2630E5EB00CB2CB9 /* MeetingListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListState.swift; sourceTree = "<group>"; };
+		8524C8512630E63800CB2CB9 /* MeetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingModel.swift; sourceTree = "<group>"; };
+		8524C8562630E74A00CB2CB9 /* MeetingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingServiceProtocol.swift; sourceTree = "<group>"; };
+		8524C85B2630E75400CB2CB9 /* MeetingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingService.swift; sourceTree = "<group>"; };
+		8524C8602630E81D00CB2CB9 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		8524C8652630E89D00CB2CB9 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		853D1B7B2630D3CC00DA13BB /* MeetingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListViewController.swift; sourceTree = "<group>"; };
 		853EB6192630D5730023EAFF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		853EB6212630D64F0023EAFF /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -64,6 +87,7 @@
 		853EB63E2630D6B50023EAFF /* UsecaseFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseFactoryProtocol.swift; sourceTree = "<group>"; };
 		853EB6432630D6C00023EAFF /* ViewModelFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactoryProtocol.swift; sourceTree = "<group>"; };
 		853EB6482630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactoryProtocol.swift; sourceTree = "<group>"; };
+		856351062630F3A5007E1205 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		85B965612630D9DC00897742 /* MeetingListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingListViewControllerProtocol.swift; sourceTree = "<group>"; };
 		85FD551E2630CF2400A0A742 /* HugoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FD55212630CF2400A0A742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +143,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8524C8422630E40900CB2CB9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8524C8432630E46500CB2CB9 /* MeetingListTableDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8524C8502630E61500CB2CB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8524C8512630E63800CB2CB9 /* MeetingModel.swift */,
+				8524C8602630E81D00CB2CB9 /* ServiceResponse.swift */,
+				8524C8652630E89D00CB2CB9 /* ServiceError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		853D1B702630D2DB00DA13BB /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +173,7 @@
 		853D1B712630D2E500DA13BB /* List */ = {
 			isa = PBXGroup;
 			children = (
+				8524C8422630E40900CB2CB9 /* DataSource */,
 				85B965682630DA2C00897742 /* ViewController */,
 				85B965672630DA1900897742 /* ViewModel */,
 				85B965662630DA1600897742 /* View */,
@@ -162,6 +205,8 @@
 		853D1B752630D33800DA13BB /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				8524C8562630E74A00CB2CB9 /* MeetingServiceProtocol.swift */,
+				8524C85B2630E75400CB2CB9 /* MeetingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -221,9 +266,27 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		856350F62630EDE1007E1205 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		856351052630F399007E1205 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				856351062630F3A5007E1205 /* Service.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		85B965662630DA1600897742 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8524C82E2630DEF100CB2CB9 /* MeetingListViewProtocol.swift */,
+				8524C8332630DF1500CB2CB9 /* MeetingListView.swift */,
+				8524C84B2630E5EB00CB2CB9 /* MeetingListState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +294,8 @@
 		85B965672630DA1900897742 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8524C8382630E35000CB2CB9 /* MeetingViewModelProtocol.swift */,
+				8524C83D2630E36300CB2CB9 /* MeetingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -269,12 +334,15 @@
 		85FD55202630CF2400A0A742 /* HugoApp */ = {
 			isa = PBXGroup;
 			children = (
+				856351052630F399007E1205 /* Base */,
 				853D1B772630D34B00DA13BB /* DependencyInjection */,
 				853D1B762630D33D00DA13BB /* Coordinator */,
+				853D1B702630D2DB00DA13BB /* Feature */,
+				856350F62630EDE1007E1205 /* Usecase */,
 				853D1B752630D33800DA13BB /* Service */,
+				8524C8502630E61500CB2CB9 /* Model */,
 				853D1B742630D32A00DA13BB /* Extension */,
 				853D1B732630D32000DA13BB /* Constant */,
-				853D1B702630D2DB00DA13BB /* Feature */,
 				85FD55212630CF2400A0A742 /* AppDelegate.swift */,
 				85FD55232630CF2400A0A742 /* SceneDelegate.swift */,
 				85FD552A2630CF2700A0A742 /* Assets.xcassets */,
@@ -535,19 +603,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8524C8662630E89D00CB2CB9 /* ServiceError.swift in Sources */,
+				8524C8392630E35000CB2CB9 /* MeetingViewModelProtocol.swift in Sources */,
+				856351072630F3A5007E1205 /* Service.swift in Sources */,
+				8524C84C2630E5EB00CB2CB9 /* MeetingListState.swift in Sources */,
+				8524C85C2630E75400CB2CB9 /* MeetingService.swift in Sources */,
 				853EB6312630D6720023EAFF /* ServiceFactory.swift in Sources */,
 				853D1B7C2630D3CC00DA13BB /* MeetingListViewController.swift in Sources */,
 				853EB63F2630D6B50023EAFF /* UsecaseFactoryProtocol.swift in Sources */,
+				8524C8442630E46500CB2CB9 /* MeetingListTableDataSource.swift in Sources */,
 				853EB6222630D64F0023EAFF /* ViewControllerFactory.swift in Sources */,
+				8524C8612630E81D00CB2CB9 /* ServiceResponse.swift in Sources */,
 				853EB61A2630D5730023EAFF /* MainCoordinator.swift in Sources */,
 				853EB6272630D6570023EAFF /* ViewModelFactory.swift in Sources */,
 				853EB63A2630D6A80023EAFF /* ServiceFactoryProtocol.swift in Sources */,
+				8524C8342630DF1500CB2CB9 /* MeetingListView.swift in Sources */,
 				853EB6492630D6CC0023EAFF /* ViewControllerFactoryProtocol.swift in Sources */,
+				8524C82F2630DEF100CB2CB9 /* MeetingListViewProtocol.swift in Sources */,
 				853EB6442630D6C00023EAFF /* ViewModelFactoryProtocol.swift in Sources */,
 				853EB62C2630D66A0023EAFF /* UsecaseFactory.swift in Sources */,
 				85B965622630D9DC00897742 /* MeetingListViewControllerProtocol.swift in Sources */,
 				85FD55222630CF2400A0A742 /* AppDelegate.swift in Sources */,
 				85FD55242630CF2400A0A742 /* SceneDelegate.swift in Sources */,
+				8524C8522630E63800CB2CB9 /* MeetingModel.swift in Sources */,
+				8524C83E2630E36300CB2CB9 /* MeetingViewModel.swift in Sources */,
+				8524C8572630E74A00CB2CB9 /* MeetingServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@ class ViewControllerFactory: ViewControllerFactoryProtocol {
     }
 
     func createMeetingListViewController() -> MeetingListViewControllerProtocol {
-        return MeetingListViewController()
+        return MeetingListViewController(contentView: MeetingListView(),
+                                         viewModel: viewModelFactory.createMeetingViewModel())
     }
 }

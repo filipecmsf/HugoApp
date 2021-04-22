@@ -8,5 +8,7 @@
 import Foundation
 
 class ServiceFactory: serviceFactoryProtocol {
-    
+    func createMeetingService() -> MeetingServiceProtocol {
+        return MeetingService()
+    }
 }
