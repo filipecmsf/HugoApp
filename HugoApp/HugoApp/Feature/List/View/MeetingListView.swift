@@ -9,10 +9,12 @@ import UIKit
 
 class MeetingListView: UIView, MeetingListViewProtocol {
 
+    let dataSource = MeetingListTableDataSource()
+
     private var tableView: UITableView = {
         var variable = UITableView()
         variable.translatesAutoresizingMaskIntoConstraints = false
-
+        variable.separatorStyle = .none
         return variable
     }()
 
@@ -20,6 +22,10 @@ class MeetingListView: UIView, MeetingListViewProtocol {
         super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
         setup()
+
+        tableView.register(MeetingCellView.self, forCellReuseIdentifier: "MeetingCellView")
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
     }
 
     required init?(coder: NSCoder) {
@@ -40,5 +46,17 @@ class MeetingListView: UIView, MeetingListViewProtocol {
         tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor).isActive = true
+    }
+
+    func updateState(state: MeetingListState) {
+        switch state {
+            case .loading:
+                print("")
+            case .data(let data):
+                dataSource.data = data
+                tableView.reloadData()
+            case .error:
+                print("")
+        }
     }
 }

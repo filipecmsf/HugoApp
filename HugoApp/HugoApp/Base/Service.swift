@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class Service {
-    func request<T: Decodable>(url: String, model: T.Type, _ completion: @escaping ((ServiceResponse) -> Void)) {
+    func request<T: Decodable>(url: String, model: T.Type, _ completion: @escaping ((ServiceResponse<T, ServiceError>) -> Void)) {
         AF.request(url)
             .responseDecodable(of: model.self) { response in
                 switch response.result {

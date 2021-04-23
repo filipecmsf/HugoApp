@@ -8,11 +8,19 @@
 import UIKit
 
 class MeetingListTableDataSource: NSObject, UITableViewDelegate, UITableViewDataSource {
+
+    var data: [MeetingCellViewEntity] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return data.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = MeetingCellView()
+        cell.setData(viewEntity: data[indexPath.row])
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

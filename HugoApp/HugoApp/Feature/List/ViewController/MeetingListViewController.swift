@@ -9,13 +9,11 @@ import UIKit
 
 class MeetingListViewController: UIViewController, MeetingListViewControllerProtocol {
     let contentView: MeetingListViewProtocol
-    let viewModel: MeetingViewModelProtocol
-    let service: MeetingService
+    var viewModel: MeetingViewModelProtocol
 
     init(contentView: MeetingListViewProtocol, viewModel: MeetingViewModelProtocol) {
         self.contentView = contentView
         self.viewModel = viewModel
-        service = MeetingService()
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -31,8 +29,14 @@ class MeetingListViewController: UIViewController, MeetingListViewControllerProt
         contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
 
-        service.requestMeetList { response in
-            print(response)
+        viewModel.requestData()
+
+        bindViewModel()
+    }
+
+    func bindViewModel() {
+        viewModel.updateViewState = {[weak self] state in
+            self?.contentView.updateState(state: state)
         }
     }
 }

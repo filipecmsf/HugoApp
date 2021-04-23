@@ -8,6 +8,6 @@
 import Foundation
 
 protocol MeetingServiceProtocol {
-    func requestMeetList(completion: @escaping ((ServiceResponse) -> Void))
-    func requestMeetDetail(id: String, completion: @escaping ((ServiceResponse) -> Void))
+    func requestMeetList(completion: @escaping ((ServiceResponse<[MeetingModel], ServiceError>) -> Void))
+    func requestMeetDetail(id: String, completion: @escaping ((ServiceResponse<MeetingModel, ServiceError>) -> Void))
 }

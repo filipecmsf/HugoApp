@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ServiceResponse {
-    case success(Decodable)
-    case error(ServiceError)
+enum ServiceResponse<Success, Failure> {
+    case success(Success)
+    case error(Failure)
 }

@@ -13,4 +13,12 @@ class UsecaseFactory: UsecaseFactoryProtocol {
     init(serviceFactory: serviceFactoryProtocol) {
         self.serviceFactory = serviceFactory
     }
+
+    func createMeetingListUsecase() -> MeetingListUsecaseProtocol {
+        return MeetingListUsecase(service: serviceFactory.createMeetingService())
+    }
+
+    func createMeetingDetailUsecase() -> MeetingDetailUsecaseProtocol {
+        return MeetingDetailUsecase(service: serviceFactory.createMeetingService())
+    }
 }

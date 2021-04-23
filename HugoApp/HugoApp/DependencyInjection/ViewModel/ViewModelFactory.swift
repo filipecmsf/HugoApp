@@ -16,6 +16,6 @@ class ViewModelFactory: ViewModelFactoryProtocol {
     }
 
     func createMeetingViewModel() -> MeetingViewModelProtocol {
-        return MeetingViewModel()
+        return MeetingViewModel(usecase: usecaseFactory.createMeetingListUsecase())
     }
 }

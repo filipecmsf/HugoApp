@@ -10,5 +10,5 @@ import Foundation
 enum MeetingListState {
     case loading
     case error
-    case data([MeetingModel])
+    case data([MeetingCellViewEntity])
 }

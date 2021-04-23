@@ -9,4 +9,6 @@ import Foundation
 
 protocol UsecaseFactoryProtocol {
     var serviceFactory: serviceFactoryProtocol {get set}
+    func createMeetingListUsecase() -> MeetingListUsecaseProtocol
+    func createMeetingDetailUsecase() -> MeetingDetailUsecaseProtocol
 }

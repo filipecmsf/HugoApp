@@ -8,5 +8,5 @@
 import UIKit
 
 protocol MeetingListViewProtocol where Self: UIView {
-
+    func updateState(state: MeetingListState)
 }
